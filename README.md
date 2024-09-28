@@ -100,3 +100,14 @@ pip install -r requirements.txt
 ```
 
 ``` bash
+uvicorn main.py:app --reload
+
+```
+### then 
+
+```bash
+cd my-app
+
+npm start
+
+```
