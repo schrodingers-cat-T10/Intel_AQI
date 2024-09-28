@@ -1,6 +1,6 @@
 # Air Quality Monitoring and Prediction System
 
-#BEFORE ANYTHING PLEASE KINDLY CHECK OUR DOCUMENTATION : https://drive.google.com/file/d/1NPIaVT1hvtYQqYWvUATc1DTbIZJo1irb/view?usp=drive_link
+# BEFORE ANYTHING PLEASE KINDLY CHECK OUR DOCUMENTATION : https://drive.google.com/file/d/1NPIaVT1hvtYQqYWvUATc1DTbIZJo1irb/view?usp=drive_link
 ## Overview
 
 This project is designed to provide a comprehensive **Air Quality Monitoring and Prediction System**. The solution leverages machine learning models and large language models to predict the Air Quality Index (AQI) and identify potential pollution sources. It includes a real-time AQI monitoring system, pollutant-level analysis, and an intelligent chatbot for industry regulation queries and pollution mitigation strategies. The system is built using a robust tech stack, combining React for the frontend, FastAPI for the backend, and Intel-optimized machine learning libraries for enhanced performance.
