@@ -1,0 +1,454 @@
+.page-two-container {
+  margin: 40px auto; /* Center the container */
+  padding: 40px;
+  max-width: 1200px; /* Limit max width */
+  border-radius: 12px;
+  /*background-color: #FFFFFF Light background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #343a40;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensure controls wrap on smaller screens */
+  margin-bottom: 30px;
+}
+
+.form-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap; /* Allow form controls to wrap on small screens */
+}
+
+.form-controls label {
+  font-size: 16px;
+  color: #495057;
+  font-weight: bold; /* Make labels bold for better visibility */
+}
+
+input[type="date"], select {
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 220px; /* Ensure a consistent width */
+  color: #495057;
+  background-color: #fff;
+  transition: border-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Slight shadow for input */
+}
+
+input[type="date"]:focus, select:focus {
+  border-color: #80bdff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Add shadow for focus */
+}
+
+.submit {
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s;
+  margin-top: 15px; /* Adjust top margin */
+}
+
+.submit:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add hover shadow */
+}
+
+.bar-chart {
+  margin-top: 30px;
+}
+
+.bottom-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.toggle-label {
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #495057;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #28a745; /* Custom color for radio buttons */
+}
+
+.bar-chart .recharts-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; /* Ensure readability on chart text */
+  color: #495057;
+}
+
+.bar-chart .recharts-bar-rectangle {
+  fill-opacity: 1;
+  transition: fill 0.3s ease; /* Smooth fill transitions */
+}
+
+.bar-chart .recharts-bar-rectangle:hover {
+  fill-opacity: 0.8; /* Hover effect for bars */
+}
+
+.bar-chart .recharts-active-dot circle {
+  fill: #00C49F; /* Customize the active dot color */
+  stroke: none;
+}
+
+*::selection {
+  background-color: rgba(0, 123, 255, 0.2); /* Subtle selection highlight */
+  color: #ffffff;
+}
+
+/* RESPONSIVENESS: Adjust styles for small screens */
+@media (max-width: 768px) {
+  .top-controls, .form-controls {
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+  }
+
+  .submit {
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+  }
+
+  input[type="date"], select {
+      width: 100%;
+  }
+
+  .page-two-container {
+      padding: 20px;
+      margin: 20px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+}
+
+/* General Layout for Page */
+.page-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Chatbox Styles */
+.box4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 400px; /* Set a fixed height for the chatbox */
+  width: 100%; /* Ensure it takes the full available width */
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-window {
+  flex-grow: 1; /* Allow the chat window to grow to fill available space */
+  overflow-y: auto; /* Enable scrolling if messages exceed the height */
+  padding: 10px;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #F8F9FA; /* Light background for chat messages */
+}
+
+.chat-window p {
+  margin: 5px 0; /* Add some margin between chat messages */
+  font-size: 14px;
+  color: #333;
+}
+
+/* Chat input styling */
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  width: 85%; /* Make the input take up most of the space */
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #CED4DA;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* General Layout for Page */
+.page-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Chatbox Styles */
+.box4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    height: 400px; /* Set a fixed height for the chatbox */
+    width: 100%; /* Ensure it takes the full available width */
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-window {
+    flex-grow: 1; /* Allow the chat window to grow to fill available space */
+    overflow-y: auto; /* Enable scrolling if messages exceed the height */
+    padding: 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #F8F9FA; /* Light background for chat messages */
+    word-wrap: break-word; /* This ensures long words break within the box */
+    overflow-wrap: break-word; /* Additional wrap control for overflow */
+}
+
+.chat-window p {
+    margin: 5px 0; /* Add some margin between chat messages */
+    font-size: 14px;
+    color: #333;
+}
+
+/* Chat input styling */
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 85%; /* Make the input take up most of the space */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #CED4DA;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.chat-input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+/* General Layout for Page */
+.page-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Chatbox Styles */
+.box4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 400px; /* Set a fixed height for the chatbox */
+  width: 100%; /* Ensure it takes the full available width */
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-window {
+  flex-grow: 1; /* Allow the chat window to grow to fill available space */
+  overflow-y: auto; /* Enable scrolling if messages exceed the height */
+  padding: 10px;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #F8F9FA; /* Light background for chat messages */
+  word-wrap: break-word; /* This ensures long words break within the box */
+  overflow-wrap: break-word; /* Additional wrap control for overflow */
+}
+
+.chat-window p {
+  margin: 5px 0; /* Add some margin between chat messages */
+  font-size: 14px;
+  color: #333;
+}
+
+/* Chat input styling */
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  width: 85%; /* Make the input take up most of the space */
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #CED4DA;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* General Layout for Page */
+.page-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Chatbox Styles */
+.box4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 400px; /* Fixed height for the chatbox */
+  width: 100%; /* Full available width */
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Ensures contents don’t overflow out of the container */
+}
+
+.chat-window {
+  flex-grow: 1;
+  overflow-y: auto; /* Scroll when messages exceed height */
+  padding: 10px;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #F8F9FA; /* Light background for chat messages */
+  word-wrap: break-word; /* Ensure long words wrap inside the box */
+  overflow-wrap: break-word; /* Forces long strings to wrap */
+  white-space: normal; /* This forces text to wrap, even in long strings */
+}
+
+.chat-window p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal; /* Ensures messages wrap within chat box */
+}
+
+/* Chat input styling */
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  width: 85%; /* Make the input take up most of the space */
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #CED4DA;
+  border-radius: 8px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word; /* Forcing text to break */
+}
+
+button[type="submit"] {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}

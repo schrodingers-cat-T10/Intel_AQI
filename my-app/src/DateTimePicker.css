@@ -1,0 +1,56 @@
+.picker-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Reduced height */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* Reduced padding */
+}
+
+.picker {
+  display: flex;
+  gap: 5px; /* Reduced gap */
+}
+
+.picker-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px; /* Reduced padding */
+  background: white;
+}
+
+.picker-label {
+  font-size: 14px; /* Adjust size as needed */
+  color: #666; /* Lighter color for labels */
+  margin-bottom: 5px; /* Space between label and controls */
+  text-align: center; /* Center the label */
+}
+
+.picker-item {
+  font-size: 16px; /* Smaller font size */
+  line-height: 30px; /* Adjusted line height */
+  color: #333;
+}
+
+.picker-arrow {
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  width: 25px; /* Smaller button */
+  height: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px; /* Smaller text */
+}
+
+.picker-arrow:hover {
+  background-color: #0056b3;
+}
