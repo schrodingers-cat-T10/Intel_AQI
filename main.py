@@ -14,6 +14,8 @@ from langchain.text_splitter import CharacterTextSplitter
 import nomic
 from langchain_community.document_loaders import PDFPlumberLoader
 from PyPDF2 import PdfReader
+from sklearnex import patch_sklearn
+patch_sklearn()
 
 
 nomic.cli.login("nk-TbdtpiqAFh3TRTPDLItfr6FLiUpXYb2TwapWvrEhi_g")
