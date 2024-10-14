@@ -26,7 +26,8 @@ This project is designed to provide a comprehensive **Air Quality Monitoring and
   - `modin` - High-performance alternative to pandas  
   - `intel-extension-for-tensorflow`  
   - `intel-extension-for-keras`  
-
+  - `optimum`
+  
 - **Other Libraries**:  
   - Matplotlib  
   - NumPy  
@@ -51,7 +52,7 @@ The system consists of four main pages with distinct functionalities:
    - Provides a slider to toggle between live and dynamic AQI predictions. The AQI value is displayed at the top, and individual molecule values are shown inside dynamic bubbles.
 
 2. **Cloud Page**:  
-   - Predicts AQI values for a selected station. If values exceed moderate levels, it lists the industries that might be responsible and suggests ways to reduce pollution based on molecule analysis using an LLM.
+   - Predicts AQI values for a selected station. If values exceed moderate levels, it lists the industries that might be responsible and suggests ways to reduce pollution based on molecule analysis using an LLM which was qlora finetuned.
 
 3. **Graph Page**:  
    - Allows visualization of AQI trends over a selected date range using bar graphs. This page helps track the city's air quality performance over time.
