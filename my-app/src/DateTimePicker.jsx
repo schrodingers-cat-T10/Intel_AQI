@@ -8,11 +8,11 @@ const DateTimePicker = ({ value, onChange }) => {
   const [hour, setHour] = useState(value.getHours());
   const [minute, setMinute] = useState(value.getMinutes());
 
-  // Trigger onChange only when values change (year, month, day, hour, minute)
+
   useEffect(() => {
     const selectedDate = new Date(year, month - 1, day, hour, minute);
     onChange(selectedDate);
-  }, [year, month, day, hour, minute]); // Add dependencies to trigger when any of these change
+  }, [year, month, day, hour, minute]); 
 
   const increment = (value, setter, max) => setter(value < max ? value + 1 : 1);
   const decrement = (value, setter, min, max) => setter(value > min ? value - 1 : max);
